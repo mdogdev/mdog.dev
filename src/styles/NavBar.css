@@ -9,7 +9,7 @@ nav {
     align-items: center;
     justify-content: center;
 
-    padding: 0.5rem;
+    padding: 1rem;
 
     background-color: var(--navBackground);
 }
@@ -27,6 +27,9 @@ a:hover {
 
 ul {
     list-style-type: none;
+    float: right;
+    overflow: hidden;
+    padding: 0;
 }
 
 li {
@@ -42,12 +45,13 @@ li {
 
 @media (max-width: 600px) {
     nav {
-        justify-content: space-between;
-        width: 100%;
-        padding: 0.5rem 1rem;
+        padding-bottom: 1rem;
     }
 
-    a {
-        margin: 0 0.5rem;
+    ul {
+        display: flex;
+        margin-bottom: 1rem;
+        justify-content: center;
+        width: 100%;
     }
 }

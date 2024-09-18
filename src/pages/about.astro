@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Stack from "../components/Stack.astro";
+
+import en from "../lang/en";
+import Centred from "../components/Centred.astro";
+
+import "../styles/About.css";
+---
+
+<Layout title={en.about.title}, description={en.about.description}>
+    <Centred>
+        <h1>{en.about.intro}</h1>
+        <p>
+            {en.about.about}
+            <br />
+            {en.about.about2}
+        </p>
+
+        <h3>{en.about.heading}</h3>
+
+        <Stack />
+
+    </Centred>
+</Layout>

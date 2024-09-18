@@ -5,20 +5,21 @@
     --accent-gradient: linear-gradient(
         45deg,
         rgb(var(--accent)),
-        rgb(var(--accent-light)) 30%,
+        rgb(var(--accent-light)) 40%,
         white 60%
     );
 
     --primary: #bb86fc;
 
-    --navBackground: #121212;
+    --navBackground: #121212fa;
     --color: LightGray;
 
     --h-margin: 5%;
 }
 html {
+    /* font-family: system-ui, sans-serif; */
     font-family: system-ui, sans-serif;
-    background: #121212fb;
+    background: #121212f0;
 }
 code {
     font-family:

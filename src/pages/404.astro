@@ -1,9 +1,46 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+import en from '../lang/en';
+import Centred from '../components/Centred.astro';
 ---
 
-<Layout title="Welcome to Astro.", description='Home Page'>
-	<main>
-        <a>Big error</a>
-	</main>
+<Layout title={en[404].text}, description={en[404].description}>
+	<Centred>
+		<h1>{en[404].bigText}</h1>
+		<p>{en[404].text}</p>
+		<a href="/">{en[404].back}</a>
+	</Centred>
 </Layout>
+
+<style>
+	h1 {
+		font-size: 3rem;
+		color: var(--color);
+	}
+	p {
+		font-size: 1.3rem;
+		color: var(--color);
+	}
+	a {
+		font-size: 1.3rem;
+		color: var(--color);
+		text-decoration: none;
+		margin: 0;
+	}
+
+
+	@media screen and (max-width: 600px) {
+		h1 {
+			font-size: 2rem;
+		}
+		p {
+			font-size: 1.15rem;
+		}
+
+		a {
+			font-size: 1.15rem;
+		}
+
+	}
+</style>

@@ -1,0 +1,64 @@
+---
+import ImgLink from "./ImgLink.astro";
+
+import { stack } from "../scripts/stack.ts";
+
+---
+
+<div>
+    {
+        Object.entries(stack).map(([key, items]) => (
+            <section>
+                <h3>{key}</h3>
+                <div id="imgs">
+                    {
+                        items.map(({name, href}) => (
+                            <ImgLink
+                                name={name}
+                                href={href}
+                                imageUri={`https://raw.githubusercontent.com/devicons/devicon/master/icons/${name.toLowerCase()}/${name.toLowerCase()}-original.svg`}
+                            />
+                        ))
+                    }
+                </div>
+            </section>
+        ))
+    }
+</div>
+
+<style>
+    section {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        background-color: gray;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+        padding: 0.2rem
+    }
+
+    h3 {
+        text-align: center;
+        display: inline;
+        margin: 0;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        width: 20%
+    }
+
+    @media screen and (max-width: 600px) {
+        section {
+            flex-direction: column;
+        }
+
+        h3 {
+            width: 100%;
+        }
+        
+    }
+
+    .imgs {
+        padding: 0;
+    }
+</style>

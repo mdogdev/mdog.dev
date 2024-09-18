@@ -1,3 +1,17 @@
 h1 {
     color: var(--color);
+    font-size: 2.5rem;
+}
+
+p {
+    color: var(--color);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+h1:is(:hover, :focus) {
+    background-image: var(--accent-gradient);
+    color: transparent;
+    background-size: cover;
+    background-clip: text;
 }
