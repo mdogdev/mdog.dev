@@ -1,0 +1,22 @@
+---
+const options = ["About", "Projects", "Contact"] as const;
+
+import '../styles/NavBar.css';
+---
+
+<nav>
+    <div id="nv">
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            {
+                options.map(option => (
+                    <li>
+                        <a href={`/${option.toLowerCase()}`}>{option}</a>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+</nav>

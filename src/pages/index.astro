@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+
+import en from '../lang/en';
+import Centred from '../components/Centred.astro';
+
+import '../styles/Home.css';
+---
+
+<Layout title={en.home.title}, description={en.home.description}>
+	<Centred>
+		<h1>{en.home.intro}</h1>
+		<p>{en.home.about}</p>
+	</Centred>
+</Layout>

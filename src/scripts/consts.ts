@@ -1,0 +1,1 @@
+export const ICON = "https://cdn.discordapp.com/avatars/1062402790456045618/76da9f874f7317d3b146dbca6986f60c.webp";
