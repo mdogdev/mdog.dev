@@ -5,8 +5,8 @@ export const stack = {
             href: "https://www.typescriptlang.org/",
         },
         {
-            name: "React",
-            href: "https://reactjs.org/",
+            name: "Nextjs",
+            href: "https://nextjs.org/",
         },
         {
             name: "Astro",

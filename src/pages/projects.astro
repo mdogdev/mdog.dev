@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import en from "../lang/en";
+import Centred from "../components/Centred.astro";
+---
+
+<Layout title={en.projects.title}, description={en.projects.description}>
+    <Centred>
+        <h1>{en.projects.intro}</h1>
+    </Centred>
+</Layout>
+
+<style>
+    h1 {
+    color: var(--color);
+    font-size: 2.25rem;
+    }
+</style>

@@ -13,7 +13,22 @@ export default {
         intro: "About me",
         about: "I have been programming for quite a while now, and I have managed to teach myself multiple languages and frameworks.",
         about2: "Most of my previous projects have been small and personal, but I am hoping to make some bigger projects in the future.",
-        heading: "My Tech Stack",
+        heading: "My Languages, Frameworks, and Tools",
+    },
+    contact: {
+        title: 'Contact',
+        description: 'Contact me',
+        intro: "Contact me"
+    },
+    blog: {
+        title: 'Blog',
+        description: 'Blog',
+        intro: "I shall at some point in time make a blog"
+    },
+    projects: {
+        title: 'Projects',
+        description: 'Projects',
+        intro: 'You have stumbled across an incomplete page. I am currently working on it, so please check back later.',
     },
     "404": {
         title: '404',
