@@ -4,7 +4,7 @@ export default {
         description: 'I made a website =D',
         intro: "Hello, I'm Mdog",
         about: "I am a self-taught developer, a fan of Linux and open-source software, and a self-host many services.",
-        future: "I am hoping to go into cybersecurity if I don't fail my exams.",
+        future: "I am hoping to go into cybersecurity if I don't fail my exams. Alternatively I may also become an airline pilot, not really decided yet",
         interests: "I really like Doctor Who, reading, and playing video games. Music is also nice if I'm in the mood.",
     },
     about: {
