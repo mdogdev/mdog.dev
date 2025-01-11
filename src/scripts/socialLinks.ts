@@ -5,15 +5,19 @@ export const socialLinks = {
     },
     fediverse: {
         username: "mdog",
-        url: "https://social.mdog.dev/@mdog"
+        url: "https://fedi.mdog.dev/@mdog"
     },
     matrix: {
         username: "mdog",
-        url: "https://matrix.to/#/@mdog:matrix.mdog.dev"
+        url: "https://matrix.to/#/@mdog:mdog.dev"
     },
     github: {
         username: "Mdog504",
         url: "https://github.com/Mdog504"
+    },
+    bluesky: {
+        username: "@mdog.dev",
+        url: "https://bsky.app/profile/mdog.dev"
     },
     email: {
         username: "mdog@mdog.dev",
