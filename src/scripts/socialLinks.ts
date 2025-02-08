@@ -13,7 +13,7 @@ export const socialLinks = {
     },
     github: {
         username: "Mdog504",
-        url: "https://github.com/Mdog504"
+        url: "https://github.com/Mdogdev"
     },
     bluesky: {
         username: "@mdog.dev",
