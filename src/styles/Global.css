@@ -11,7 +11,6 @@
 
     --primary: #bb86fc;
 
-    --navBackground: #121212fa;
     --color: LightGray;
 
     --h-margin: 5%;
@@ -19,9 +18,18 @@
 html {
     /* font-family: system-ui, sans-serif; */
     font-family: system-ui, sans-serif;
-    background: #121212f0;
+    background: linear-gradient(
+        45deg,
+        #a45ee5,
+        #8f00ff,
+        #EDABEF 
+    );
+    background-size: 400% 400%;
+    animation: gradient 20s linear infinite running;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
-code {
+/* code {
     font-family:
         Menlo,
         Monaco,
@@ -31,11 +39,23 @@ code {
         Bitstream Vera Sans Mono,
         Courier New,
         monospace;
-}
+} */
 
 @media screen and (min-width: 800px) {
     :root {
         --h-margin: 20%;
     }
     
+}
+
+@keyframes gradient{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

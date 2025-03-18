@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Stack from "../components/Stack.astro";
 
 import en from '../lang/en';
 import Centred from '../components/Centred.astro';
@@ -10,13 +11,13 @@ import '../styles/Home.css';
 
 <Layout title={en.home.title}, description={en.home.description}>
 	<Centred>
-		<h1>{en.home.intro}</h1>
+		<h1 id="intro">{en.home.intro}</h1>
+		<h2 id="sub-intro">{en.home.subIntro}</h2>
 		<p>
 			{en.home.about}
-			<br />
-			{en.home.future}
-			<br />
-			{en.home.interests}
 		</p>
+
+		<h3>{en.home.stacks}</h3>
+		<Stack />
 	</Centred>
 </Layout>
